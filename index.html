@@ -575,6 +575,11 @@
             text-align: center;
         }
 
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         .cta-section h2 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 3.5rem;
@@ -634,9 +639,24 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 4rem;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
             margin-bottom: 3rem;
+            align-items: start;
+        }
+
+        .footer-map {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            height: 300px;
+        }
+
+        .footer-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
         }
 
         .footer-about h3 {
@@ -718,6 +738,10 @@
             .footer-content {
                 grid-template-columns: 1fr;
                 gap: 3rem;
+            }
+
+            .footer-map {
+                height: 250px;
             }
 
             .nav-links {
@@ -1020,13 +1044,13 @@
     </section>
 
     <section class="cta-section" id="contact">
-        <div class="fade-in">
+        <div class="cta-content fade-in">
             <h2>Ready to Move Forward?</h2>
             <p>
                 Schedule an initial consultation to discuss your case and receive an assessment from an attorney specializing in family law. We offer experienced legal counsel that you can trust from the very beginning of your case.
             </p>
             <a href="tel:+18035559876" class="cta-button">Call Us Today</a>
-            <a href="/cdn-cgi/l/email-protection#a4cbc2c2cdc7c1e4c6d6cdc8ccc5cad0c1c5cac0cbd0d08ac7cbc9" class="cta-button secondary">Send Us an Email</a>
+            <a href="mailto:office@brilhanteandott.com" class="cta-button secondary">Send Us an Email</a>
         </div>
     </section>
 
@@ -1055,8 +1079,17 @@
                 <ul>
                     <li>Aiken, South Carolina</li>
                     <li><a href="tel:+18035559876">(803) 555-9876</a></li>
-                    <li><a href="/cdn-cgi/l/email-protection#cfa0a9a9a6acaa8fadbda6a3a7aea1bbaaaea1aba0bbbbe1aca0a2"><span class="__cf_email__" data-cfemail="b3dcd5d5dad0d6f3d1c1dadfdbd2ddc7d6d2ddd7dcc7c79dd0dcde">[email&#160;protected]</span></a></li>
+                    <li><a href="mailto:office@brilhanteandott.com">office@brilhanteandott.com</a></li>
                 </ul>
+            </div>
+            <div class="footer-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106543.21635871793!2d-81.78959338730469!3d33.56013230000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f9c8e9f0f6e0e1%3A0x9e7e7e7e7e7e7e7e!2sAiken%2C%20SC!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Brilhante & Ott Location - Aiken, SC">
+                </iframe>
             </div>
         </div>
         <div class="footer-bottom">
@@ -1064,7 +1097,7 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1100,13 +1133,3 @@
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 }
-            });
-        }, observerOptions);
-
-        // Observe all elements
-        document.querySelectorAll('.fade-in').forEach((el) => {
-            observer.observe(el);
-        });
-
-        // Make elements visible that are already in viewport on page load
-        window.addEventListener('load', () => {
