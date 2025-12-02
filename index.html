@@ -305,9 +305,10 @@
 
         .team-photo {
             width: 100%;
+            max-width: 300px;
             aspect-ratio: 3/4;
             background: linear-gradient(135deg, var(--soft-gray), var(--light-cream));
-            margin-bottom: 2rem;
+            margin: 0 auto 2rem;
             overflow: hidden;
             position: relative;
             border-radius: 4px;
@@ -406,6 +407,34 @@
             overflow: hidden;
         }
 
+        .practice-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 3px solid var(--soft-gray);
+            transition: all 0.4s ease;
+        }
+
+        .practice-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--secondary-gold);
+            transition: all 0.4s ease;
+        }
+
+        .practice-card:hover .practice-icon {
+            border-color: var(--secondary-gold);
+            transform: scale(1.05);
+        }
+
+        .practice-card:hover .practice-icon svg {
+            fill: var(--accent-teal);
+        }
+
         .practice-card::before {
             content: '';
             position: absolute;
@@ -432,6 +461,7 @@
             color: var(--primary-navy);
             margin-bottom: 1.5rem;
             font-weight: 600;
+            text-align: center;
         }
 
         .practice-card p {
@@ -510,19 +540,20 @@
             height: 45px;
             background: transparent;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             flex-shrink: 0;
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: var(--secondary-gold);
             position: relative;
+            padding-top: 0.5rem;
         }
 
         .feature-icon::before {
             content: '⚜';
             display: block;
             font-family: serif;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+            filter: drop-shadow(0 1px 3px rgba(197, 165, 114, 0.4));
         }
 
         .feature-text h4 {
@@ -855,24 +886,83 @@
         </div>
         <div class="practice-grid">
             <div class="practice-card">
+                <div class="practice-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3L4 9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        <path d="M12 3L20 9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        <ellipse cx="6.5" cy="12" rx="1.5" ry="1.8"/>
+                        <path d="M6.5 14.3c-1.2 0-2 0.7-2 1.7v3c0 0.4 0.3 0.7 0.8 0.7h2.4c0.5 0 0.8-0.3 0.8-0.7v-3c0-1-0.8-1.7-2-1.7z"/>
+                        <ellipse cx="12" cy="12" rx="1.5" ry="1.8"/>
+                        <path d="M12 14.3c-1.2 0-2 0.7-2 1.7v3c0 0.4 0.3 0.7 0.8 0.7h2.4c0.5 0 0.8-0.3 0.8-0.7v-3c0-1-0.8-1.7-2-1.7z"/>
+                        <ellipse cx="17.5" cy="12" rx="1.5" ry="1.8"/>
+                        <path d="M17.5 14.3c-1.2 0-2 0.7-2 1.7v3c0 0.4 0.3 0.7 0.8 0.7h2.4c0.5 0 0.8-0.3 0.8-0.7v-3c0-1-0.8-1.7-2-1.7z"/>
+                    </svg>
+                </div>
                 <h3>Family Court</h3>
                 <p>
                     Bringing a case in family court, whether it be a highly contested divorce or a grandparent adoption, is emotionally taxing and impossible to navigate without competent counsel. We are here to help guide you through the difficulties and obstacles of family court with compassionate and experienced representation.
                 </p>
             </div>
             <div class="practice-card">
+                <div class="practice-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="6.5" cy="8" rx="2" ry="2.3"/>
+                        <path d="M6.5 11c-1.8 0-3 0.9-3 2.3v4c0 0.6 0.5 1.2 1.2 1.2h3.6c0.7 0 1.2-0.6 1.2-1.2v-4c0-1.4-1.2-2.3-3-2.3z"/>
+                        <ellipse cx="17.5" cy="8" rx="2" ry="2.3"/>
+                        <path d="M17.5 11c-1.8 0-3 0.9-3 2.3v4c0 0.6 0.5 1.2 1.2 1.2h3.6c0.7 0 1.2-0.6 1.2-1.2v-4c0-1.4-1.2-2.3-3-2.3z"/>
+                    </svg>
+                </div>
+                <h3>Collaborative Divorce</h3>
+                <p>
+                    A confidential, solution-focused process where spouses decide what is best for their family with the help of trained professionals. This approach focuses on the best outcome for your family without court hearings, testifying, or decisions made by judges unfamiliar with your family's needs.
+                </p>
+            </div>
+            <div class="practice-card">
+                <div class="practice-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="4.5"/>
+                        <rect x="11.2" y="1" width="1.6" height="4" rx="0.8"/>
+                        <rect x="11.2" y="19" width="1.6" height="4" rx="0.8"/>
+                        <rect x="19" y="11.2" width="4" height="1.6" rx="0.8"/>
+                        <rect x="1" y="11.2" width="4" height="1.6" rx="0.8"/>
+                        <rect x="17.5" y="4" width="1.6" height="4" rx="0.8" transform="rotate(45 18.3 6)"/>
+                        <rect x="4.9" y="16.5" width="1.6" height="4" rx="0.8" transform="rotate(45 5.7 18.5)"/>
+                        <rect x="16.5" y="17.5" width="1.6" height="4" rx="0.8" transform="rotate(-45 17.3 19.5)"/>
+                        <rect x="4" y="4.9" width="1.6" height="4" rx="0.8" transform="rotate(-45 4.8 6.9)"/>
+                    </svg>
+                </div>
                 <h3>Guardian ad Litem</h3>
                 <p>
                     The court requires the appointment of a Guardian ad Litem when a family court case involves a minor child or a probate case involves an allegedly incapacitated person. As a Guardian ad Litem, we will conduct an investigation and help the Court determine what case outcome is in the best interest of the minor child or incapacitated adult.
                 </p>
             </div>
             <div class="practice-card">
+                <div class="practice-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="11" y="4" width="2" height="14" rx="1"/>
+                        <circle cx="12" cy="3.5" r="1.8"/>
+                        <path d="M12 6L6 12" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                        <path d="M12 6L18 12" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                        <ellipse cx="6" cy="12.5" rx="3.5" ry="1.8"/>
+                        <path d="M2.5 12.5v1.5c0 1 1.6 1.8 3.5 1.8s3.5-0.8 3.5-1.8v-1.5"/>
+                        <ellipse cx="18" cy="12.5" rx="3.5" ry="1.8"/>
+                        <path d="M14.5 12.5v1.5c0 1 1.6 1.8 3.5 1.8s3.5-0.8 3.5-1.8v-1.5"/>
+                        <rect x="9" y="18.5" width="6" height="2.5" rx="1.2"/>
+                    </svg>
+                </div>
                 <h3>Mediation</h3>
                 <p>
                     At first, it may seem impossible to reach an agreement in a family court case as to child custody, visitation, child support, and division of the marital assets. During mediation, we serve as objective and neutral third-parties to help you and the other party to the case reach an agreement that works for everyone.
                 </p>
             </div>
             <div class="practice-card">
+                <div class="practice-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6z"/>
+                        <path d="M14 2v6h6"/>
+                        <path d="M8 13h8M8 17h5"/>
+                    </svg>
+                </div>
                 <h3>Additional Services</h3>
                 <p>
                     We also provide representation in victim advocacy, special education law matters, DSS representation, guardianships, and conservatorships. Our comprehensive approach ensures your family receives the specialized attention your case deserves.
@@ -936,7 +1026,7 @@
                 Schedule an initial consultation to discuss your case and receive an assessment from an attorney specializing in family law. We offer experienced legal counsel that you can trust from the very beginning of your case.
             </p>
             <a href="tel:+18035559876" class="cta-button">Call Us Today</a>
-            <a href="/cdn-cgi/l/email-protection#a4cdcac2cbe4c6d6cdc8ccc5cad0c1c5cac0cbd0d08ac7cbc9" class="cta-button secondary">Send Us an Email</a>
+            <a href="/cdn-cgi/l/email-protection#a4cbc2c2cdc7c1e4c6d6cdc8ccc5cad0c1c5cac0cbd0d08ac7cbc9" class="cta-button secondary">Send Us an Email</a>
         </div>
     </section>
 
@@ -965,7 +1055,7 @@
                 <ul>
                     <li>Aiken, South Carolina</li>
                     <li><a href="tel:+18035559876">(803) 555-9876</a></li>
-                    <li><a href="/cdn-cgi/l/email-protection#81e8efe7eec1e3f3e8ede9e0eff5e4e0efe5eef5f5afe2eeec"><span class="__cf_email__" data-cfemail="5e373038311e3c2c3732363f302a3b3f303a312a2a703d3133">[email&#160;protected]</span></a></li>
+                    <li><a href="/cdn-cgi/l/email-protection#cfa0a9a9a6acaa8fadbda6a3a7aea1bbaaaea1aba0bbbbe1aca0a2"><span class="__cf_email__" data-cfemail="b3dcd5d5dad0d6f3d1c1dadfdbd2ddc7d6d2ddd7dcc7c79dd0dcde">[email&#160;protected]</span></a></li>
                 </ul>
             </div>
         </div>
@@ -974,7 +1064,7 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1020,13 +1110,3 @@
 
         // Make elements visible that are already in viewport on page load
         window.addEventListener('load', () => {
-            document.querySelectorAll('.fade-in').forEach((el) => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) {
-                    el.classList.add('visible');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
