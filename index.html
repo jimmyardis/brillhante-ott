@@ -6,13 +6,13 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
+    <meta name="description" content="Brilhante & Ott Family Law Attorneys in Aiken, SC. Collaborative divorce, family court, guardian ad litem, and mediation services. South Carolina Collaboratively trained attorneys.">
     <title>Brilhante & Ott | Family Law Attorneys in Aiken, SC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="jessica-brilhante.jpg" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
-        
         :root {
             --primary-navy: #1a2a3a;
             --secondary-gold: #c5a572;
@@ -35,6 +35,23 @@
             background-color: var(--light-cream);
             line-height: 1.7;
             overflow-x: hidden;
+        }
+
+        /* Skip Navigation Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-navy);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 10000;
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 0;
         }
 
         /* Navigation */
@@ -802,7 +819,8 @@
     </style>
 </head>
 <body>
-    <nav>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation">
         <div class="logo">Brilhante & Ott</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -813,6 +831,7 @@
         </ul>
     </nav>
 
+    <main id="main">
     <section class="hero">
         <div class="hero-content">
             <h1>
@@ -857,7 +876,7 @@
         <div class="team-grid">
             <div class="team-member">
                 <div class="team-photo">
-                    <img src="jessica-brilhante.png" alt="Jessica Brilhante">
+                    <img src="jessica-brilhante.jpg" alt="Jessica Brilhante" width="600" height="800" loading="eager" fetchpriority="high">
                 </div>
                 <h3>Jessica Brilhante</h3>
                 <div class="team-title">Attorney</div>
@@ -872,7 +891,7 @@
             </div>
             <div class="team-member">
                 <div class="team-photo">
-                    <img src="taylor-ott.png" alt="Taylor Ott">
+                    <img src="taylor-ott.jpg" alt="Taylor Ott" width="600" height="800" loading="lazy">
                 </div>
                 <h3>Taylor Ott</h3>
                 <div class="team-title">Attorney</div>
@@ -887,7 +906,7 @@
             </div>
             <div class="team-member">
                 <div class="team-photo">
-                    <img src="april.png" alt="April">
+                    <img src="april.jpg" alt="April" width="600" height="800" loading="lazy">
                 </div>
                 <h3>April</h3>
                 <div class="team-title">Case Manager</div>
@@ -910,8 +929,8 @@
         </div>
         <div class="practice-grid">
             <div class="practice-card">
-                <div class="practice-icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="practice-icon" role="img" aria-label="Family under roof icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path d="M12 3L4 9" stroke="currentColor" stroke-width="1.5" fill="none"/>
                         <path d="M12 3L20 9" stroke="currentColor" stroke-width="1.5" fill="none"/>
                         <ellipse cx="6.5" cy="12" rx="1.5" ry="1.8"/>
@@ -928,8 +947,8 @@
                 </p>
             </div>
             <div class="practice-card">
-                <div class="practice-icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="practice-icon" role="img" aria-label="Two people collaborating icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <ellipse cx="6.5" cy="8" rx="2" ry="2.3"/>
                         <path d="M6.5 11c-1.8 0-3 0.9-3 2.3v4c0 0.6 0.5 1.2 1.2 1.2h3.6c0.7 0 1.2-0.6 1.2-1.2v-4c0-1.4-1.2-2.3-3-2.3z"/>
                         <ellipse cx="17.5" cy="8" rx="2" ry="2.3"/>
@@ -942,8 +961,8 @@
                 </p>
             </div>
             <div class="practice-card">
-                <div class="practice-icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="practice-icon" role="img" aria-label="Sun icon representing guidance">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <circle cx="12" cy="12" r="4.5"/>
                         <rect x="11.2" y="1" width="1.6" height="4" rx="0.8"/>
                         <rect x="11.2" y="19" width="1.6" height="4" rx="0.8"/>
@@ -961,8 +980,8 @@
                 </p>
             </div>
             <div class="practice-card">
-                <div class="practice-icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="practice-icon" role="img" aria-label="Scales of justice icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <rect x="11" y="4" width="2" height="14" rx="1"/>
                         <circle cx="12" cy="3.5" r="1.8"/>
                         <path d="M12 6L6 12" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
@@ -980,8 +999,8 @@
                 </p>
             </div>
             <div class="practice-card">
-                <div class="practice-icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="practice-icon" role="img" aria-label="Document icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6z"/>
                         <path d="M14 2v6h6"/>
                         <path d="M8 13h8M8 17h5"/>
@@ -1050,9 +1069,10 @@
                 Schedule an initial consultation to discuss your case and receive an assessment from an attorney specializing in family law. We offer experienced legal counsel that you can trust from the very beginning of your case.
             </p>
             <a href="tel:+18035559876" class="cta-button">Call Us Today</a>
-            <a href="mailto:office@Brilhanteandott.com" class="cta-button secondary">Send Us an Email</a>
+            <a href="/cdn-cgi/l/email-protection#d4bbb2b2bdb7b194b6a6bdb8bcb5baa0b1b5bab0bba0a0fab7bbb9" class="cta-button secondary">Send Us an Email</a>
         </div>
     </section>
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -1079,7 +1099,7 @@
                 <ul>
                     <li>Aiken, South Carolina</li>
                     <li><a href="tel:+18035559876">(803) 555-9876</a></li>
-                    <li><a href="mailto:office@Brilhanteandott.com">office@Brilhanteandott.com</a></li>
+                    <li><a href="/cdn-cgi/l/email-protection#09666f6f606a6c496b7b60656168677d6c68676d667d7d276a6664"><span class="__cf_email__" data-cfemail="dfb0b9b9b6bcba9fbdadb6b3b7beb1abbabeb1bbb0ababf1bcb0b2">[email&#160;protected]</span></a></li>
                 </ul>
             </div>
             <div class="footer-map">
@@ -1097,7 +1117,7 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1124,12 +1144,4 @@
 
         // Scroll animation for elements
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+            th
